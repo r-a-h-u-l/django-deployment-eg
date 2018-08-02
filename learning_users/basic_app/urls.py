@@ -1,0 +1,11 @@
+from django.urls import re_path
+from basic_app import views
+
+#TEMPLATE URLS
+app_name = 'basic_app'
+
+urlpatterns=[
+    re_path(r'^register/$',views.register,name='register'),
+    re_path(r'^user_login/$',views.user_login,name='login'),
+    re_path(r'^special/',views.special,name='specialpage'),
+]
